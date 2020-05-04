@@ -1,4 +1,4 @@
-const code = 404;
+const code = 200;
 
 export default (req, res) => {
   res.status(code).json({
