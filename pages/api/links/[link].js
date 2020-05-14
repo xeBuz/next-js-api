@@ -1,6 +1,6 @@
 export default async (req, res) => {
     const { query: { link } } = req
-    var code = 200;
+    var code = 404;
 
     const urls = [
         {link: "example", code: 404},
