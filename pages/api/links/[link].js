@@ -21,8 +21,6 @@ export default async (req, res) => {
     if (existing) {
         code = existing.code;
     }
-    const r = await fetch("https://gist.githubusercontent.com/xeBuz/e04a8efc4f9cd710ccd455bbd9fef9c8/raw/d5134fc95679083fc67412f9cc137186dd40ce6c/links.json");
-    const posts = await r.json();
 
     res.status(code).json({
         'code': code,
