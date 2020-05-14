@@ -16,11 +16,11 @@ export default async (req, res) => {
         {link: "pink", code: 200},
         {link: "orange", code: 200},
 
-        {link: "frodo", code: 404},
-        {link: "bilbo", code: 404},
-        {link: "sam", code: 404},
-        {link: "merry", code: 404},
-        {link: "pippin", code: 404},
+        {link: "frodo", code: 403},
+        {link: "bilbo", code: 403},
+        {link: "sam", code: 403},
+        {link: "merry", code: 403},
+        {link: "pippin", code: 403},
     ];
 
     var existing = urls.find(u => u.link.toLowerCase() == link.toLowerCase())
